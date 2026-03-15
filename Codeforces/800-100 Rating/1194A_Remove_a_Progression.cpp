@@ -1,3 +1,5 @@
+// Easiest problem. Putting it here cz I found it funny, how noticing patterns can solve some problems so easily that looks complex at first glance
+// Problem link: https://codeforces.com/contest/1194/problem/A
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
