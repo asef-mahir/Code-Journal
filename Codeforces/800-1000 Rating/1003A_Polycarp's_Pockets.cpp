@@ -1,8 +1,8 @@
 /* Problem Link: https://codeforces.com/contest/1003/problem/A
-Logic: The min pockets needed = the max frequency of any single coin value.
-used unordered_map to count occurences and iterated the map for finding out the 
-largest value (pointer->first = key, pointer->second = value).
-Complexity: Time O(n), Space O(n) */
+-Logic: The min pockets needed = the max frequency of any single coin value.
+-used unordered_map to count occurences and iterated the map for finding out the 
+-largest value (pointer->first = key, pointer->second = value).
+-Complexity: Time O(n), Space O(n) */
 
 #include <bits/stdc++.h>
 using namespace std;
