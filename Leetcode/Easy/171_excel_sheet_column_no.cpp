@@ -29,10 +29,6 @@ int main()
     cout << sol.titleToNumber("BC");
 }
 
-
-
-
-
 /*
    CORE LOGIC: Base-26 Conversion (Similar to Decimal)
    In Decimal (Base-10), "123" is: (1 * 10^2) + (2 * 10^1) + (3 * 10^0)
