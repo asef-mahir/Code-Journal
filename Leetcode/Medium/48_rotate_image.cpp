@@ -1,6 +1,6 @@
 // Problem link: https://leetcode.com/problems/rotate-image/description/
 // Be extra cautious while transposing the matrix
-// Complexity: O(n^2)
+// Time Complexity: O(n^2), Space complexity: O(1)
 
 #include<bits/stdc++.h>
 using namespace std;
