@@ -10,17 +10,17 @@ class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
         int l = 0, r = 0, len = 0;
-        unordered_set <int> hs;
+        unordered_set <int> hs;     
 
         while(r < s.length())
         {
-            if(hs.find(s[r]) == hs.end()){
+            if(hs.find(s[r]) == hs.end()){      // if the character is not in the hashset, insert it and move the right pointer
                 hs.insert(s[r]);
                 r++;
                 len = max(len, r - l);        // window length/ hashset length = r - l (after r increment ofc)
             }
             else{
-                hs.erase(s[l]);
+                hs.erase(s[l]);          // if the character is in the hashset, remove the leftmost character and move the left pointer
                 l++;
             }
         }
