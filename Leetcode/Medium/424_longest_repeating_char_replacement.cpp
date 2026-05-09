@@ -15,14 +15,14 @@ public:
         unordered_map <char, int> hm;
         while(r < s.length())
         {
-            hm[s[r]]++;
-            maxF = max(maxF, hm[s[r]]);
+            hm[s[r]]++;                // Increment the count of the current character in the hashmap
+            maxF = max(maxF, hm[s[r]]);           // Update the maximum frequency of any character in the current window
             r++;
-            if(r - l - maxF <= k){
-                res = max(res, r - l);
+            if(r - l - maxF <= k){               // If the number of replacements needed (window size - max frequency) is less than or equal to k, update the result
+                res = max(res, r - l);           // Update the result with the maximum length of the valid window
             }
             else{
-                hm[s[l]]--;
+                hm[s[l]]--;                       // If the number of replacements needed is greater than k, shrink the window from the left and decrement the count of the leftmost character in the hashmap
                 l++;
             }
         }
