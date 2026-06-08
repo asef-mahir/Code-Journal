@@ -66,7 +66,7 @@ WHERE rnk <= 3
 
 
 -- Explanation:
--- 1. Created a table (t) with the department name, employee name, salary and the rank of the salary in the department using DENSE_RANK() function.
+-- 1. Created a derived table (t) from a subquery with the department name, employee name, salary and the rank of the salary in the department using DENSE_RANK() function.
 -- 2. Filtered the table to get only the employees with rank less than or equal to 3
 -- ***IMPORTANT***  DENSE_RANK() is used instead of RANK() because if there are multiple employees with the same salary, they should all be considered as high earners and given the same rank. RANK() would skip the next rank(s) after a tie, which is not desired in this case.
 -- *** PARTITION BY e.departmentId --> resets ranking per department
