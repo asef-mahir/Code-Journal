@@ -97,7 +97,7 @@ UNION ALL
 -- This solution uses two independent subqueries combined using UNION ALL.
 
 -- PART 1: Finds the user who has rated the most movies.
--- GROUP BY runs only on user_id; name is included only because it is selected, not as a grouping key.
+-- GROUP BY uses (user_id, name) as a composite key; though only user_id is necessary for the aggregation, name is included to satisfy SQL's requirement that all selected non-aggregated columns appear in GROUP BY.
 -- ORDER BY COUNT(*) DESC picks the most active user; name is used for lexicographical tie-break.
 
 -- PART 2: Finds the highest-rated movie in February 2020 only.
